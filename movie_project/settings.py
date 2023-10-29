@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7!cv@0@_qnejhh$x%m^90hn9nb_v8$i-tf@r7xqt5ph3&b7^f_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.vercel.app']
 
@@ -78,10 +78,15 @@ CORS_ALLOW_ALL_ORIGINS = True
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'xfrfbkhl',
+        'USER': 'xfrfbkhl',
+        'PASSWORD': 'Viwsbg7LdSECQEuHNnzYXaxfARHRH3Po',
+        'HOST': 'suleiman.db.elephantsql.com',
+        'PORT': '5432',  # Adjust the port if necessary
     }
 }
 
